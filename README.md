@@ -18,6 +18,7 @@
 - `npm start`
 
 ### Structure
+```
 .
 ├── app.js
 ├── package.json
@@ -40,3 +41,4 @@
         ├── layouts
         ├── partials
         └── ...
+        ```
