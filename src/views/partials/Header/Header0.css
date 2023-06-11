@@ -45,7 +45,7 @@
   width: 32.1%;
   position: relative;
   flex-grow: 1;
-  margin: 8px 0% 7px 67.9%;
+  margin: 8px 0% 7px 55%;
 }
 
 .header0__flexRow1>.cell {
@@ -160,6 +160,12 @@
   position: relative;
   min-width: 20px;
   margin: 3px 0px 4px;
+}
+
+.search-bar {
+  margin-left: 5px;
+  display: block;
+  outline: none;
 }
 
 /*# sourceMappingURL=Header0.css.map */
