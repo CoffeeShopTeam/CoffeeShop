@@ -4,6 +4,7 @@
   background-color: rgb(255, 255, 255);
   position: relative;
 }
+
 .header0__flexRow {
   display: flex;
   align-items: center;
@@ -12,6 +13,7 @@
   flex-grow: 1;
   margin: 29px auto 25px;
 }
+
 .header0__medium_title {
   font: 700 26px/1.5 "Poppins", Helvetica, Arial, serif;
   color: rgb(0, 0, 0);
@@ -23,9 +25,11 @@
   min-height: 37px;
   max-height: 37px;
 }
-.header0__flexRow > .spacer {
+
+.header0__flexRow>.spacer {
   flex: 1 1 227px;
 }
+
 .header0__box {
   display: flex;
   flex-direction: column;
@@ -34,6 +38,7 @@
   flex: 0 1 1271px;
   margin: 3px 0px 6px;
 }
+
 .header0__flexRow1 {
   display: flex;
   align-items: center;
@@ -42,12 +47,14 @@
   flex-grow: 1;
   margin: 8px 0% 7px 67.9%;
 }
-.header0__flexRow1 > .cell {
+
+.header0__flexRow1>.cell {
   display: flex;
   flex-direction: column;
   position: relative;
   flex: 0 1 100px;
 }
+
 .header0__txt {
   display: flex;
   justify-content: center;
@@ -59,13 +66,15 @@
   height: 100%;
   cursor: pointer;
 }
-.header0__flexRow1 > .cell1 {
+
+.header0__flexRow1>.cell1 {
   display: flex;
   flex-direction: column;
   position: relative;
   flex: 0 0 96px;
   min-width: 96px;
 }
+
 .header0__highlights2 {
   display: flex;
   justify-content: center;
@@ -78,9 +87,11 @@
   flex-grow: 1;
   margin: 0px 0px 0px 9px;
 }
-.header0__flexRow1 > .spacer {
+
+.header0__flexRow1>.spacer {
   flex: 0 1 39px;
 }
+
 .header0__rect5 {
   background-color: rgb(0, 0, 0);
   position: relative;
@@ -89,15 +100,18 @@
   min-height: 17px;
   margin: 4px 0px 6px;
 }
-.header0__flexRow1 > .spacer1 {
+
+.header0__flexRow1>.spacer1 {
   flex: 0 1 48px;
 }
-.header0__flexRow1 > .cell2 {
+
+.header0__flexRow1>.cell2 {
   display: flex;
   flex-direction: column;
   position: relative;
   flex: 0 1 20px;
 }
+
 .header0__image10 {
   width: 20px;
   height: auto;
@@ -110,15 +124,18 @@
   min-width: 20px;
   margin: 4px 0px 4px 12px;
 }
-.header0__flexRow1 > .spacer2 {
+
+.header0__flexRow1>.spacer2 {
   flex: 0 1 40px;
 }
-.header0__flexRow1 > .cell3 {
+
+.header0__flexRow1>.cell3 {
   display: flex;
   flex-direction: column;
   position: relative;
   flex: 0 1 21px;
 }
+
 .header0__icon1 {
   width: 21px;
   height: auto;
@@ -131,6 +148,7 @@
   min-width: 21px;
   margin: 4px 0px 2px;
 }
+
 .header0__icon {
   width: 20px;
   height: auto;

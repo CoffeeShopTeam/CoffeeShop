@@ -1,9 +1,3 @@
-<!-- Changes:
-OnClick - changed to full path
-Tags closures - removed extra /div in header. applied to all
-Coupon code input
-Newsletter input -->
-
 <!DOCTYPE html>
 <html>
 
@@ -15,19 +9,17 @@ Newsletter input -->
     href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
   <!-- Font Awesome is an icon library -->
-
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <!-- 'Animate On Scroll' library -->
-
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Bootstrap linker -->
 
   <!-- Please DO NOT remove this line, all link and script tags will be merged to here -->
 
-
   <link rel="stylesheet" type="text/css" href="/src/views/layouts/Cart/Cart.css" />
   <link rel="stylesheet" type="text/css" href="/src/views/partials/Header/Header0.css" />
   <link rel="stylesheet" type="text/css" href="/src/views/partials/Footer/Footer.css" />
+  <script type="text/javascript" src="/src/views/index.js"></script>
   <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
 </head>
@@ -314,9 +306,10 @@ Newsletter input -->
       </section>
     </div>
   </main>
+  <a href="Cart.html" class="footer pt-6 position-relative bg-dark text-light back-to-top">Back To Top</a>
+
   <script type="text/javascript">
     AOS.init();
-
     const header = document.querySelector("#header");
     if (header) {
       const headroom = new Headroom(header);

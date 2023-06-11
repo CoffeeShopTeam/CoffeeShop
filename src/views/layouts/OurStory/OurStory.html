@@ -8,16 +8,18 @@
   <link rel="stylesheet" type="text/css"
     href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+  <!-- Font Awesome is an icon library -->
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  <!-- 'Animate On Scroll' library -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Bootstrap linker -->
+
   <!-- Please DO NOT remove this line, all link and script tags will be merged to here -->
 
-  <link rel="stylesheet" type="text/css" href="/css/common.css" />
-  <link rel="stylesheet" type="text/css" href="/css/fonts.css" />
-  <link rel="stylesheet" type="text/css" href="/css/headroom.css" />
   <link rel="stylesheet" type="text/css" href="\src\views\layouts\OurStory\OurStory.css" />
   <link rel="stylesheet" type="text/css" href="\src\views\partials\Header\Header0.css" />
   <link rel="stylesheet" type="text/css" href="\src\views\partials\Footer\Footer.css" />
-
+  <script type="text/javascript" src="/src/views/index.js"></script>
   <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
 </head>
@@ -34,7 +36,8 @@
             <div class="header0__flexRow1">
               <div class="cell">
                 <px-grid track-style="flex-grow: 1;" x="7.02px 70.98fr 24fr" y="0px minmax(0px, max-content) 0fr">
-                  <div class="header0__txt" onclick="window.location.href = 'ShopPage.html'">Shop</div>
+                  <div class="header0__txt"
+                    onclick="window.location.href = '/src/views/layouts/ShopPage/ShopPage.html'">Shop</div>
                 </px-grid>
               </div>
               <div class="cell1">
@@ -50,7 +53,7 @@
               <div class="spacer2"></div>
               <div class="cell3">
                 <img src="\src\views\partials\assets\c17d264818e2602d684362f3a37cf356.png" alt="alt text"
-                  class="header0__icon1" onclick="alert(`It is clickable`)" />
+                  class="header0__icon1" onclick="window.location.href='/src/views/layouts/Cart/Cart.html'" />
               </div>
               <div class="spacer2"></div>
               <div class="cell2">
@@ -139,12 +142,21 @@
             </div>
             <div class="spacer"></div>
             <div class="footer__flexCol1">
+              <br>
               <div class="footer__flexCol2">
                 <div class="footer__group1">
-                  <img src="\src\views\partials\assets\b7e1c0cf5ea9d66d3515dc9f50dccd61.png" alt="alt text"
-                    class="footer__image1" onclick="alert(`It is clickable`)" />
-                  <h5 class="footer__highlights13">Give an email, get the newsletter.</h5>
+                  <div class="footer__highlights13">
+                    <input class="form-control email-input" type="text"
+                      placeholder="Enter your email, get the newsletter!">
+                  </div>
+                  <div class="footer__image-container">
+                    <img src="\src\views\partials\assets\b7e1c0cf5ea9d66d3515dc9f50dccd61.png"
+                      alt="A clickable arrow to submit email" class="footer__image1"
+                      onclick="alert(`It is clickable`)" />
+                    <!-- Send an email with newsletter -->
+                  </div>
                 </div>
+                <br><br>
                 <hr size="1" class="footer__line1" />
               </div>
             </div>
@@ -155,9 +167,10 @@
       </section>
     </div>
   </main>
+  <a href="Cart.html" class="footer pt-6 position-relative bg-dark text-light back-to-top">Back To Top</a>
+
   <script type="text/javascript">
     AOS.init();
-
     const header = document.querySelector("#header");
     if (header) {
       const headroom = new Headroom(header);
