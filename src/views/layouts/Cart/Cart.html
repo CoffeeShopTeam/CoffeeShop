@@ -1,3 +1,9 @@
+<!-- Changes:
+OnClick - changed to full path
+Tags closures - removed extra /div in header. applied to all
+Coupon code input
+Newsletter input -->
+
 <!DOCTYPE html>
 <html>
 
@@ -9,20 +15,51 @@
     href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
     integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
   <!-- Font Awesome is an icon library -->
+
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <!-- 'Animate On Scroll' library -->
+
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <!-- Bootstrap linker -->
 
   <!-- Please DO NOT remove this line, all link and script tags will be merged to here -->
 
+  <link rel="stylesheet" type="text/css" href="/css/common.css" />
+  <link rel="stylesheet" type="text/css" href="/css/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="/css/headroom.css" />
   <link rel="stylesheet" type="text/css" href="/src/views/layouts/Cart/Cart.css" />
   <link rel="stylesheet" type="text/css" href="/src/views/partials/Header/Header0.css" />
   <link rel="stylesheet" type="text/css" href="/src/views/partials/Footer/Footer.css" />
-  <script type="text/javascript" src="/src/views/index.js"></script>
   <script type="text/javascript" src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script type="text/javascript" src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"></script>
 </head>
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css" />
+    <link rel="stylesheet" type="text/css" href="/css/headroom.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="\src\views\layouts\Cart\Cart.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="\src\views\partials\Header\Header0.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="\src\views\partials\Footer\Footer.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/aos@2.3.1/dist/aos.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/headroom.js@0.12.0/dist/headroom.min.js"
+    ></script>
+  </head>
 
 <body class="flex-column">
   <header id="header" class="headroom">
@@ -30,7 +67,7 @@
       <!-- prettier-ignore -->
       <div class="header0 header0__group1">
         <div class="header0__flexRow">
-          <h2 class="header0__medium_title" onclick="">Urusta.</h2>
+          <h2 class="header0__medium_title" onclick="alert(`It is clickable`)">Urusta.</h2>
           <div class="spacer"></div>
           <div class="header0__box">
             <div class="header0__flexRow1">
@@ -41,17 +78,14 @@
                 </px-grid>
               </div>
               <div class="cell1">
-                <h4 class="header0__highlights2" onclick="">Our Story</h4>
+                <h4 class="header0__highlights2" onclick="alert(`It is clickable`)">Our Story</h4>
               </div>
               <div class="spacer"></div>
               <div class="header0__rect5"></div>
               <div class="spacer1"></div>
-              <div class="search-bar input-group">
-                <input placeholder="Search" name="search-bar">
-              </div>
               <div class="cell2">
                 <img src="\src\views\partials\assets\d652c1328e3779d6ed57fa1af8dbec68.png" alt="alt text"
-                  class="header0__image10" />
+                  class="header0__image10" onclick="alert(`It is clickable`)" />
               </div>
               <div class="spacer2"></div>
               <div class="cell3">
@@ -61,7 +95,7 @@
               <div class="spacer2"></div>
               <div class="cell2">
                 <img src="\src\views\partials\assets\5f10cef3f154249dc60ba91722a6524f.png" alt="alt text"
-                  class="header0__icon" onclick="" />
+                  class="header0__icon" onclick="alert(`It is clickable`)" />
               </div>
             </div>
           </div>
@@ -168,7 +202,7 @@
                   </div>
                 </div>
                 <hr size="1" class="section1__line" />
-                <div class="section1__content_box7" onclick="">
+                <div class="section1__content_box7" onclick="alert(`It is clickable`)">
                   <h4 class="section1__highlights4">UPDATE CART</h4>
                 </div>
                 <div class="section1__flexRow8">
@@ -178,7 +212,7 @@
                     </div>
                   </div>
                   <div class="spacer"></div>
-                  <div class="section1__content_box6" onclick="">
+                  <div class="section1__content_box6" onclick="alert(`It is clickable`)">
                     <h4 class="section1__highlights21">APPLY COUPON</h4>
                     <!-- Check with the DB if the coupon is valid -->
                   </div>
@@ -236,7 +270,7 @@
                       <hr size="1" class="section1__line2" />
                       <div class="section1__info3">POST CODE / ZIP</div>
                       <hr size="1" class="section1__line2" />
-                      <div class="section1__content_box3" onclick="">
+                      <div class="section1__content_box3" onclick="alert(`It is clickable`)">
                         <h4 class="section1__highlights41">UPDATE TOTALS</h4>
                       </div>
                     </div>
@@ -269,11 +303,11 @@
           <div class="footer__nullContent">
             <div class="footer__flexCol">
               <div class="footer__flexRow">
-                <h5 class="footer__highlights1" onclick="">CONTACT</h5>
+                <h5 class="footer__highlights1" onclick="alert(`It is clickable`)">CONTACT</h5>
                 <div class="spacer"></div>
-                <h5 class="footer__highlights11" onclick="">TERMS OF SERVICES</h5>
+                <h5 class="footer__highlights11" onclick="alert(`It is clickable`)">TERMS OF SERVICES</h5>
                 <div class="spacer1"></div>
-                <h5 class="footer__highlights12" onclick="">SHIPPING AND RETURNS</h5>
+                <h5 class="footer__highlights12" onclick="alert(`It is clickable`)">SHIPPING AND RETURNS</h5>
               </div>
               <h5 class="footer__highlights_box">
                 <span class="footer__highlights"><span class="footer__highlights_span0">© 2023 MadMach.</span><span
@@ -284,7 +318,6 @@
             </div>
             <div class="spacer"></div>
             <div class="footer__flexCol1">
-              <br>
               <div class="footer__flexCol2">
                 <div class="footer__group1">
                   <div class="footer__highlights13">
@@ -293,8 +326,78 @@
                   </div>
                   <div class="footer__image-container">
                     <img src="\src\views\partials\assets\b7e1c0cf5ea9d66d3515dc9f50dccd61.png"
-                      alt="A clickable arrow to submit email" class="footer__image1" onclick="" />
+                      alt="A clickable arrow to submit email" class="footer__image1"
+                      onclick="alert(`It is clickable`)" />
                     <!-- Send an email with newsletter -->
+                        <hr size="1" class="section1__line2" />
+                        <div class="section1__info3">POST CODE / ZIP</div>
+                        <hr size="1" class="section1__line2" />
+                        <div
+                          class="section1__content_box3"
+                          onclick="alert(`It is clickable`)"
+                        >
+                          <h4 class="section1__highlights41">UPDATE TOTALS</h4>
+                        </div>
+                      </div>
+                      <hr size="1" class="section1__line11" />
+                      <div class="section1__flexRow11">
+                        <h5 class="section1__highlights31">TOTAL</h5>
+                        <div class="spacer"></div>
+                        <h5 class="section1__highlights32">$380</h5>
+                      </div>
+                    </div>
+                    <div
+                      class="section1__content_box4"
+                      onclick="alert(`It is clickable`)"
+                    >
+                      <h4 class="section1__highlights22">
+                        PROCEED TO CHECKOUT
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- ======= End section1 ======= -->
+      </div>
+      <div class="section2">
+        <!-- prettier-ignore -->
+        <section class="footer footer__section2">
+            <hr size="1" class="footer__line" />
+            <div class="footer__group">
+              <div class="footer__nullContent">
+                <div class="footer__flexCol">
+                  <div class="footer__flexRow">
+                    <h5 class="footer__highlights1" onclick="alert(`It is clickable`)">CONTACT</h5>
+                    <div class="spacer"></div>
+                    <h5 class="footer__highlights11" onclick="alert(`It is clickable`)">TERMS OF SERVICES</h5>
+                    <div class="spacer1"></div>
+                    <h5 class="footer__highlights12" onclick="alert(`It is clickable`)">SHIPPING AND RETURNS</h5>
+                  </div>
+                  <h5 class="footer__highlights_box">
+                    <span class="footer__highlights"
+                      ><span class="footer__highlights_span0">© 2023 MadMach.</span
+                      ><span class="footer__highlights_span1"> Terms of use </span
+                      ><span class="footer__highlights_span2">and</span
+                      ><span class="footer__highlights_span3"> privacy policy.</span></span
+                    >
+                  </h5>
+                </div>
+                <div class="spacer"></div>
+                <div class="footer__flexCol1">
+                  <div class="footer__flexCol2">
+                    <div class="footer__group1">
+                      <img
+                        src="\src\views\partials\assets\b7e1c0cf5ea9d66d3515dc9f50dccd61.png"
+                        alt="alt text"
+                        class="footer__image1"
+                        onclick="alert(`It is clickable`)"
+                      />
+                      <h5 class="footer__highlights13">Give an email, get the newsletter.</h5>
+                    </div>
+                    <hr size="1" class="footer__line1" />
                   </div>
                 </div>
                 <br><br>
@@ -308,10 +411,9 @@
       </section>
     </div>
   </main>
-  <a href="Cart.html" class="footer pt-6 position-relative bg-dark text-light back-to-top">Back To Top</a>
-
   <script type="text/javascript">
     AOS.init();
+
     const header = document.querySelector("#header");
     if (header) {
       const headroom = new Headroom(header);
